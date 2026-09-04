@@ -35,16 +35,20 @@ regions.
   population dominance (~36% of NZ population)
 - Auckland vs Wellington CSAT distributions show no statistically 
   significant difference (KS: 0.0287, p-value: 0.988)
-- Random Forest model achieved AUROC of 0.52, suggesting that 
+- Random Forest model achieved AUROC of 0.52, indicating that 
   region, channel, and plan alone are insufficient predictors of 
-  CSAT — indicating systemic service quality issues rather than 
-  location or plan-specific problems
+  CSAT satisfaction
 - Region is the most influential feature (importance: ~0.40), 
   followed by Plan (~0.35) and Channel (~0.20)
+- These results suggest that additional variables — such as agent 
+  performance, ticket resolution time, or text-based sentiment 
+  analysis — may be required to build a more predictive model; 
+  this is identified as a direction for further analysis
 
 ## Skills Demonstrated
 - SQL querying with SQLite
 - Statistical analysis (KS test) applied to customer data
 - Machine learning (Random Forest) with AUROC validation
 - Feature importance analysis
-- Translating low model performance into meaningful business insights
+- Honest interpretation of model limitations and identification 
+  of next analytical steps
