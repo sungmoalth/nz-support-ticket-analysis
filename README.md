@@ -1,4 +1,4 @@
-# 🇳🇿 NZ Telecom Support Ticket Analysis
+# NZ Telecom Support Ticket Analysis
 
 ## Overview
 This project analyses 3,500 customer support tickets from a fictional 
@@ -37,7 +37,7 @@ regions.
   significant difference (KS: 0.0287, p-value: 0.988)
 - Random Forest model achieved AUROC of 0.52, indicating that 
   region, channel, and plan alone are insufficient predictors of 
-  CSAT satisfaction
+  CSAT satisfaction, Random Forest AUROC = 0.52 — essentially no better than random guessing.
 - Region is the most influential feature (importance: ~0.40), 
   followed by Plan (~0.35) and Channel (~0.20)
 - These results suggest that additional variables — such as agent 
@@ -45,6 +45,17 @@ regions.
   analysis — may be required to build a more predictive model; 
   this is identified as a direction for further analysis
 
+### Practical Usefulness (What can / cannot be used in practice)
+
+**What can be used**
+- Confirms that relying only on region, channel, and plan is insufficient to predict customer dissatisfaction.
+- Provides evidence that CS/operations teams should prioritise other factors (agent skill, resolution time, ticket text) over simple regional targeting.
+
+**What cannot be used / Limitations**
+- The current model is not reliable enough for operational decisions (e.g. prioritising high-risk customers).
+- Synthetic data may not fully reflect real NZ telecom patterns.
+- Privacy and consent constraints would apply if real customer data were used.
+  
 ## Skills Demonstrated
 - SQL querying with SQLite
 - Statistical analysis (KS test) applied to customer data
