@@ -29,10 +29,13 @@ regions.
 - **Random Forest Classifier** — CSAT prediction model
 - **KS Statistic** — distribution comparison across regions
 - **AUROC** — model performance validation
+- * Multiple linear regression (OLS) — CSAT ~ Region + Channel + Plan (dummy-coded)
 
 ## Key Findings
 - Auckland generates the highest ticket volume, reflecting its 
   population dominance (~36% of NZ population)
+-* OLS multiple regression with Region, Channel, and Plan explains almost none of the variation in CSAT (R² = 0.011, Adj. R² ≈ 0, overall F-test p = 0.73). Most individual coefficients are not significant at the 5% level.
+* This aligns with the Random Forest result (AUROC ≈ 0.52): these features are weak both for prediction and for linear explanation of CSAT.
 - Auckland vs Wellington CSAT distributions show no statistically 
   significant difference (KS: 0.0287, p-value: 0.988)
 - Random Forest model achieved AUROC of 0.52, indicating that 
@@ -63,3 +66,4 @@ regions.
 - Feature importance analysis
 - Honest interpretation of model limitations and identification 
   of next analytical steps
+- Regression confirms that region/channel/plan alone should not drive CSAT improvement strategy.
