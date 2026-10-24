@@ -29,7 +29,7 @@ regions.
 - **Random Forest Classifier** — CSAT prediction model
 - **KS Statistic** — distribution comparison across regions
 - **AUROC** — model performance validation
-- * Multiple linear regression (OLS) — CSAT ~ Region + Channel + Plan (dummy-coded)
+- Multiple linear regression (OLS) — CSAT ~ Region + Channel + Plan (dummy-coded)
 
 ## Key Findings
 - Auckland generates the highest ticket volume, reflecting its 
